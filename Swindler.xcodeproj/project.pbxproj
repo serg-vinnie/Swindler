@@ -37,6 +37,8 @@
 		2FD2D0681C67EC8700D0355D /* ScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD2D0671C67EC8700D0355D /* ScreenSpec.swift */; };
 		2FEEA29C1C1D36B000CD515E /* Swindler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F86CEC61BD60117007E8C29 /* Swindler.framework */; };
 		2FEEA2E31C1E6E9200CD515E /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEEA2E21C1E6E9200CD515E /* Log.swift */; };
+		E62BE50D23A2EA9B00B03007 /* AXSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62BE50C23A2EA9B00B03007 /* AXSwift.framework */; };
+		E62BE50F23A2EAA200B03007 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E62BE50E23A2EAA200B03007 /* PromiseKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		2FEEA2C41C1E09A300CD515E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2FEEA2E21C1E6E9200CD515E /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		2FEF3F171C20017300C89067 /* AXSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AXSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/Swindler-azuobwjvfcuxujafcskujfxfoylf/Build/Products/Debug/AXSwift.framework"; sourceTree = "<group>"; };
+		E62BE50C23A2EA9B00B03007 /* AXSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AXSwift.framework; path = Carthage/Build/Mac/AXSwift.framework; sourceTree = "<group>"; };
+		E62BE50E23A2EAA200B03007 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/Mac/PromiseKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62BE50D23A2EA9B00B03007 /* AXSwift.framework in Frameworks */,
+				E62BE50F23A2EAA200B03007 /* PromiseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +137,8 @@
 		2F86CEBC1BD60117007E8C29 = {
 			isa = PBXGroup;
 			children = (
+				E62BE50E23A2EAA200B03007 /* PromiseKit.framework */,
+				E62BE50C23A2EA9B00B03007 /* AXSwift.framework */,
 				2F86CEC81BD60117007E8C29 /* Sources */,
 				2F86CED41BD60117007E8C29 /* SwindlerTests */,
 				2F86CEEA1BD6EC32007E8C29 /* SwindlerExample */,
@@ -230,7 +238,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F86CEDA1BD60117007E8C29 /* Build configuration list for PBXNativeTarget "Swindler" */;
 			buildPhases = (
-				8E36A92A205B734E955F4CCB /* [CP] Check Pods Manifest.lock */,
 				2F86CEC11BD60117007E8C29 /* Sources */,
 				2F86CEC21BD60117007E8C29 /* Frameworks */,
 				2F86CEC31BD60117007E8C29 /* Headers */,
@@ -391,28 +398,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SwindlerTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E36A92A205B734E955F4CCB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Swindler-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -637,6 +622,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -660,6 +649,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
