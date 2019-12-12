@@ -37,9 +37,6 @@
 		2FD2D0681C67EC8700D0355D /* ScreenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD2D0671C67EC8700D0355D /* ScreenSpec.swift */; };
 		2FEEA29C1C1D36B000CD515E /* Swindler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F86CEC61BD60117007E8C29 /* Swindler.framework */; };
 		2FEEA2E31C1E6E9200CD515E /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEEA2E21C1E6E9200CD515E /* Log.swift */; };
-		5C38DE3FBCECC5C0A5AC903B /* Pods_SwindlerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F8A5C2288829AB1B277B04 /* Pods_SwindlerTests.framework */; };
-		6E7C0BA95ED211D168CD3058 /* Pods_Swindler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B294155BAF709C01A3A7D2 /* Pods_Swindler.framework */; };
-		BAB205C9E67B0A04C5B48938 /* Pods_SwindlerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC881B514AADAF10E329E46D /* Pods_SwindlerExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,14 +89,11 @@
 		2FEEA2E21C1E6E9200CD515E /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		2FEF3F171C20017300C89067 /* AXSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AXSwift.framework; path = "../../Library/Developer/Xcode/DerivedData/Swindler-azuobwjvfcuxujafcskujfxfoylf/Build/Products/Debug/AXSwift.framework"; sourceTree = "<group>"; };
 		65F7E114E06A3008C7ACD928 /* Pods-Swindler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swindler.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swindler/Pods-Swindler.release.xcconfig"; sourceTree = "<group>"; };
-		67B294155BAF709C01A3A7D2 /* Pods_Swindler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swindler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		95F8A5C2288829AB1B277B04 /* Pods_SwindlerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwindlerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9770BE09728506004DE2AFFE /* Pods-SwindlerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwindlerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwindlerTests/Pods-SwindlerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8301D2BD952877F659DD278 /* Pods-SwindlerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwindlerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwindlerTests/Pods-SwindlerTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF5A7C04CB1300C0D8C4180B /* Pods-SwindlerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwindlerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwindlerExample/Pods-SwindlerExample.debug.xcconfig"; sourceTree = "<group>"; };
 		EBB05393530FC0EC1221E1DD /* Pods-SwindlerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwindlerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwindlerExample/Pods-SwindlerExample.release.xcconfig"; sourceTree = "<group>"; };
 		F97BEFE14949AF716E467C2C /* Pods-Swindler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swindler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swindler/Pods-Swindler.debug.xcconfig"; sourceTree = "<group>"; };
-		FC881B514AADAF10E329E46D /* Pods_SwindlerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwindlerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E7C0BA95ED211D168CD3058 /* Pods_Swindler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +109,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F86CED11BD60117007E8C29 /* Swindler.framework in Frameworks */,
-				5C38DE3FBCECC5C0A5AC903B /* Pods_SwindlerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +117,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FEEA29C1C1D36B000CD515E /* Swindler.framework in Frameworks */,
-				BAB205C9E67B0A04C5B48938 /* Pods_SwindlerExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,9 +228,6 @@
 				2FEEA2C41C1E09A300CD515E /* AppKit.framework */,
 				2FEEA2AC1C1E041200CD515E /* XCTest.framework */,
 				2F7F01091C1A608C00C97949 /* AXSwift.framework */,
-				67B294155BAF709C01A3A7D2 /* Pods_Swindler.framework */,
-				95F8A5C2288829AB1B277B04 /* Pods_SwindlerTests.framework */,
-				FC881B514AADAF10E329E46D /* Pods_SwindlerExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -345,6 +333,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
